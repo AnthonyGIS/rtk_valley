@@ -62,9 +62,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-
-
+        <!--        add for banner 20.5.24-->
+        <activity android:name=".ui.banner_show.ui.VideoActivity"/>
+        <activity android:name=".ui.banner_show.ui.Vp2FragmentRecyclerviewActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
     </application>
 

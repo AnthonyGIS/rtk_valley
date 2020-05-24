@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RTK_Valley</string>
+    <string name="app_name">RTK Valley</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -11,6 +11,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_bdmap_location">Location On BDMap</string>
+    <string name="menu_banner_show">Banner show</string>
 
     <string name="home_second">Home Second</string>
     <string name="next">Next</string>
@@ -20,4 +21,8 @@
     <string name="hello_slideshow_second">Hello HomeSecondFragment. Arg: %1$s</string>
     <string name="bd_map_location">BD MAP Location</string>
     <string name="loc_record">Loc. Record</string>
+    <string name="banner_show">Banner show</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

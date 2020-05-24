@@ -1,6 +1,5 @@
 package com.weng.rtkvalley.ui.bdmap_location;
 
-import android.graphics.Point;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,7 +29,7 @@ public class BDMapLocationFragment extends Fragment {
     private Button btn_location = null;
     private TextView tv_location = null;
     private Button btn_changeMapType = null;
-    private RadioButton rbtn_mtype_satlliate = null;
+    private RadioButton rbtn_mtype_satellite = null;
     private RadioButton rbtn_mtype_normal = null;
 
 
@@ -62,7 +61,7 @@ public class BDMapLocationFragment extends Fragment {
         btn_changeMapType = root.findViewById(R.id.btn_LocationRecord);
 
         // map type
-        rbtn_mtype_satlliate = root.findViewById(R.id.rbtn_mtype_satlliate);
+        rbtn_mtype_satellite = root.findViewById(R.id.rbtn_mtype_satlliate);
         rbtn_mtype_normal = root.findViewById(R.id.rbtn_mtype_vec);
     }
 
@@ -70,7 +69,7 @@ public class BDMapLocationFragment extends Fragment {
     public void initialBDMap()
     {
         // for baidu map
-        mMapView = (MapView) root.findViewById(R.id.bmapView);
+        mMapView = root.findViewById(R.id.bmapView);
         assert(mMapView != null);
         
 
@@ -134,7 +133,7 @@ public class BDMapLocationFragment extends Fragment {
             }
         };
         rbtn_mtype_normal.setOnClickListener(tmp_listener);
-        rbtn_mtype_satlliate.setOnClickListener(tmp_listener);
+        rbtn_mtype_satellite.setOnClickListener(tmp_listener);
 
     }
 
