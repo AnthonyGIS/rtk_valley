@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.bdmap_location.BDMapLocationFragment">
+
+    <TextView
+            android:id="@+id/text_slideshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+            android:text="@string/bd_map_location"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:id="@+id/tv_bd_map_location"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:autoText="false" android:paddingLeft="1dp" android:layout_marginTop="120dp"/>
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="408dp"
+            android:layout_height="670dp"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bd_map_location"
+            android:focusable="true" android:layout_marginTop="10dp"/>
+    <Button
+            android:text="Location"
+            android:layout_width="116dp"
+            android:layout_height="43dp"
+            android:id="@+id/btn_Locate"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="HardcodedText"
+            app:layout_constraintTop_toTopOf="@+id/tv_bd_map_location"/>
+    <Button
+            android:text="@string/loc_record"
+            android:layout_width="114dp"
+            android:layout_height="45dp"
+            android:id="@+id/btn_LocationRecord"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Locate"
+            tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="@+id/btn_Locate"/>
+    <RadioGroup
+            android:layout_width="129dp"
+            android:layout_height="33dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_LocationRecord"
+            android:layout_marginBottom="36dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/btn_LocationRecord">
+        <RadioButton
+                android:text="VEC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_mtype_vec" android:checked="true"/>
+        <RadioButton
+                android:text="IMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_mtype_satlliate"/>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

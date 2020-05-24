@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+http://lbsyun.baidu.com/index.php?title=androidsdk/guide/create-project/attention
+如果使用默认的http协议，由于Android P（包含更高版本）系统禁止使用所有未加密的连接，所以在使用检索功能
+（poi检索，路线规划，行政区域检索，地理编码，逆地理编码）会返回error.SEARCH_SERVER_INTERNAL_ERROR。
+并有如下异常信息：
+W/System.err: java.io.IOException: Cleartext HTTP traffic to **** not permitted
+
+-->
+
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
