@@ -42,9 +42,14 @@
             tools:layout="@layout/fragment_slideshow"/>
     <fragment
             android:id="@+id/nav_banner_show"
-            android:name="com.weng.rtkvalley.ui.banner_show.BannerShowFragment"
+            android:name="com.weng.rtkvalley.ui.demo_banner.BannerShowFragment"
             android:label="@string/menu_banner_show"
             tools:layout="@layout/fragment_banner_show"/>
+    <fragment
+            android:id="@+id/nav_lib_interface"
+            android:name="com.weng.rtkvalley.ui.lib_interface.LIBInterfaceFragment"
+            android:label="@string/menu_bdmap_location"
+            tools:layout="@layout/fragment_libs"/>
     <fragment
             android:id="@+id/nav_bdmap_location"
             android:name="com.weng.rtkvalley.ui.bdmap_location.BDMapLocationFragment"

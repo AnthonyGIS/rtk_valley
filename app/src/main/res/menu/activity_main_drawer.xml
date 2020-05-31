@@ -21,6 +21,10 @@
                 android:icon="@drawable/ic_menu_slideshow"
                 android:title="@string/banner_show"/>
         <item
+                android:id="@+id/nav_lib_interface"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/menu_lib_interface"/>
+        <item
                 android:id="@+id/nav_bdmap_location"
                 android:icon="@drawable/ic_menu_slideshow"
                 android:title="@string/menu_bdmap_location"/>
