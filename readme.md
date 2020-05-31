@@ -10,4 +10,5 @@ at [versions file](doc/versions.md).
 
 
 # license
-BSD-3
+BSD-3. <br/>
+And, this is only for RTK Valley itself, not for the third part dependencies. 

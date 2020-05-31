@@ -1,5 +1,5 @@
-#v 0.1.2
-* add [pickview](https://github.com/brucetoo/PickView) library and its demos.
+# v 0.1.2
+* add [pickview](https://github.com/brucetoo/PickView) library (Apache License, Version 2.0) and its demos.
 * add lib_interface package
 * change file dir of com.weng.rtkvalley.ui.
 
@@ -9,7 +9,7 @@
 
 
 # v 0.1.1
-* add [banner](https://github.com/youth5201314/banner) library and its demos.
+* add [banner](https://github.com/youth5201314/banner) library  (Apache License, Version 2.0) and its demos.
 
 * note about how to add libs to project. <br/>
 
